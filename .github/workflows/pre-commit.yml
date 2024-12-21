@@ -6,4 +6,4 @@ on:
 
 jobs:
   pre-commit:
-    uses: "mosher-labs/.github/.github/workflows/pre-commit.yml@main"
+    uses: "Mosher-Labs/.github/.github/workflows/pre-commit.yml@main"
