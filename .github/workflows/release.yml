@@ -1,0 +1,10 @@
+---
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  pre-commit:
+    uses: "Mosher-Labs/.github/.github/workflows/release.yml@main"
