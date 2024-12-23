@@ -11,7 +11,7 @@ jobs:
   release:
     uses: "Mosher-Labs/.github/.github/workflows/release.yml@v0.3.0"
 
-  release_heimdallr:
+  heimdallr:
     uses: "./.github/workflows/slack.yml"
     with:
       message: "Testing release slack messages."

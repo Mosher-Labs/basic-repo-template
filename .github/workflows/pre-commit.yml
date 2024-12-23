@@ -10,3 +10,8 @@ permissions: read-all
 jobs:
   pre-commit:
     uses: "Mosher-Labs/.github/.github/workflows/pre-commit.yml@main"
+
+  heimdallr:
+    uses: "./.github/workflows/slack.yml"
+    with:
+      message: "Testing pre-commit slack messages."
