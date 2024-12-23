@@ -12,6 +12,6 @@ jobs:
     uses: "Mosher-Labs/.github/.github/workflows/pre-commit.yml@main"
 
   heimdallr:
-    uses: "./.github/workflows/slack.yml"
+    uses: "Mosher-Labs/.github/.github/workflows/heimdallr.yml@heimdallr"
     with:
       message: "Testing pre-commit slack messages."
