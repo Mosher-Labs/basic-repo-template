@@ -12,6 +12,7 @@ jobs:
     uses: "Mosher-Labs/.github/.github/workflows/pre-commit.yml@main"
 
   heimdallr:
+    needs: pre-commit
     uses: "Mosher-Labs/.github/.github/workflows/heimdallr.yml@heimdallr"
     secrets: inherit
     with:
