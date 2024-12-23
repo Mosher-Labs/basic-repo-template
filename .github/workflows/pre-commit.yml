@@ -9,11 +9,10 @@ permissions: read-all
 
 jobs:
   pre-commit:
-    uses: "Mosher-Labs/.github/.github/workflows/pre-commit.yml@main"
-
+    uses: "Mosher-Labs/.github/.github/workflows/pre-commit.yml@heimdallr"
   heimdallr:
     needs: pre-commit
     uses: "Mosher-Labs/.github/.github/workflows/heimdallr.yml@heimdallr"
     secrets: inherit
     with:
-      message: "Testing pre-commit slack messages."
+      message: "The project $GITHUB_REPOSITORY just released version ${{ needs.pre-commit.outputs.changed_files }}."
