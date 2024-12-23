@@ -6,7 +6,6 @@ on:
         required: false
         type: string
         default: "Default slack message."
-  push:
 
 permissions: read-all
 

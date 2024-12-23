@@ -10,6 +10,7 @@ permissions:
 jobs:
   release:
     uses: "Mosher-Labs/.github/.github/workflows/release.yml@v0.3.0"
+
   release_heimdallr:
     uses: "./.github/workflows/slack.yml"
     with:
