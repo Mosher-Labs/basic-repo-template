@@ -16,4 +16,4 @@ jobs:
     uses: "Mosher-Labs/.github/.github/workflows/heimdallr.yml@heimdallr"
     secrets: inherit
     with:
-      slack_message: "The project $GITHUB_REPOSITORY just released version ${{ needs.release.outputs.next_version }}."
+      slack_message: "The project <https://github.com/${{ github.repository }}|${{ github.repository }}> just released version <https://github.com/${{ github.repository }}/releases/tag/${{ needs.release.outputs.next_version }}|${{ needs.release.outputs.next_version }}>."

@@ -9,10 +9,4 @@ permissions: read-all
 
 jobs:
   pre-commit:
-    uses: "Mosher-Labs/.github/.github/workflows/pre-commit.yml@heimdallr"
-  heimdallr:
-    needs: pre-commit
-    uses: "Mosher-Labs/.github/.github/workflows/heimdallr.yml@heimdallr"
-    secrets: inherit
-    with:
-      slack_message: "The project <https://github.com/${{ github.repository }}|${{ github.repository }}> just released version <https://github.com/${{ github.repository }}/releases/tag/v0.4.0|v0.4.0>."
+    uses: "Mosher-Labs/.github/.github/workflows/pre-commit.yml@main"
