@@ -13,5 +13,6 @@ jobs:
 
   heimdallr:
     uses: "Mosher-Labs/.github/.github/workflows/heimdallr.yml@heimdallr"
+    secrets: inherit
     with:
       message: "Testing pre-commit slack messages."

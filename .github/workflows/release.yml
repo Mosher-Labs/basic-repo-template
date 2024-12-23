@@ -12,6 +12,7 @@ jobs:
     uses: "Mosher-Labs/.github/.github/workflows/release.yml@v0.3.0"
 
   heimdallr:
-    uses: "./.github/workflows/slack.yml"
+    uses: "Mosher-Labs/.github/.github/workflows/heimdallr.yml@heimdallr"
+    secrets: inherit
     with:
-      message: "Testing release slack messages."
+      message: "Testing pre-commit slack messages."
