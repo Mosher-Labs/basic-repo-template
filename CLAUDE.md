@@ -67,7 +67,8 @@ basic-repo-template/
 - `refactor:` - Code refactoring (no version bump)
 - `test:` - Temporary test changes (like branch references)
 
-**Breaking changes:** Add `!` after type (e.g., `feat!:`) or include `BREAKING CHANGE:` in commit body for major version bump
+**Breaking changes:** Add `!` after type (e.g., `feat!:`) or include
+`BREAKING CHANGE:` in commit body for major version bump
 
 ## Pre-commit Hooks
 
